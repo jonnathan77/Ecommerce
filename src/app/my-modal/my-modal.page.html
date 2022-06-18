@@ -1,0 +1,17 @@
+
+<ion-content>
+  <ion-row>
+      <ion-col size="12" *ngFor="let val of [].contructor(15); let i = infex">
+          Item {{ i  }}
+      </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer class="ion-text-center">
+<ion-toolbar>
+  <ion-button (click)="dismiss()" color="light">
+      <ion-icon name="close-circle"></ion-icon>
+  </ion-button>
+</ion-toolbar>
+</ion-footer>
+
