@@ -22,7 +22,7 @@
 
   <ion-card  style="max-width: 1080px; justify-content: center; margin: 20px auto; border-radius: 10px;">
     <ion-item>
-      <ion-icon style="margin-right: 10px" name="desktop-outline"></ion-icon>
+      <ion-icon style="margin-right: 10px; color: black" name="desktop-outline"></ion-icon>
       <ion-label>Sobre o Projeto:</ion-label>
       <ion-button fill="outline" slot="end">Ver mais</ion-button>
     </ion-item>
@@ -35,7 +35,7 @@
 
   <ion-card  style="max-width: 1080px; justify-content: center; margin: 20px auto; border-radius: 10px;">
     <ion-item>
-      <ion-icon style="margin-right: 10px" name="clipboard-outline"></ion-icon>
+      <ion-icon style="margin-right: 10px ;color: black" name="clipboard-outline"></ion-icon>
       <ion-label>Portifolio:</ion-label>
       <ion-button fill="outline" slot="end">Ver mais</ion-button>
     </ion-item>
@@ -49,9 +49,9 @@
   <!-- COLOCAR OS POKEMONS NO MODAL -->
   <ion-card  style="max-width: 1080px; justify-content: center; margin: 20px auto; border-radius: 10px;">
     <ion-item>
-      <svg style="max-width: 25px; max-height: 25px; margin-right: 10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.5,12c0,1.38-1.12,2.5-2.5,2.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5C13.38,9.5,14.5,10.62,14.5,12z M22,12 c0,5.52-4.48,10-10,10C6.48,22,2,17.52,2,12S6.48,2,12,2C17.52,2,22,6.48,22,12z M20,12h-4c0-2.21-1.79-4-4-4c-2.21,0-4,1.79-4,4H4 c0,4.41,3.59,8,8,8C16.41,20,20,16.41,20,12z"/></svg>
+      <svg style="max-width: 25px; max-height: 25px; margin-right: 10px; color: black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.5,12c0,1.38-1.12,2.5-2.5,2.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5C13.38,9.5,14.5,10.62,14.5,12z M22,12 c0,5.52-4.48,10-10,10C6.48,22,2,17.52,2,12S6.48,2,12,2C17.52,2,22,6.48,22,12z M20,12h-4c0-2.21-1.79-4-4-4c-2.21,0-4,1.79-4,4H4 c0,4.41,3.59,8,8,8C16.41,20,20,16.41,20,12z"/></svg>
       <ion-label>Projeto Pokemon:</ion-label>
-      <ion-button fill="outline" slot="end">Ver mais</ion-button>
+      <ion-button (click)="openModal(item)" fill="outline" slot="end">Ver mais</ion-button>
     </ion-item>
   
     <ion-card-content>
@@ -60,7 +60,7 @@
   </ion-card>
 
   <!-- API DO POKEMON PARA SER REULTILIZADA EM OUTROS MOMENTOS -->
-  <ion-grid>
+  <!-- <ion-grid>
     <ion-row>
       <h1><strong>Pokemons: </strong></h1>
     </ion-row>
@@ -71,17 +71,17 @@
 
       </ion-item>
     </ion-row>
-  </ion-grid>
+  </ion-grid> -->
 
 
   <!-- COLOCAR OS POKEMONS DENTRO DE UM MODAL E USAR O MODAL EM OUTRAS PAGINAS -->
-  <ion-row>
+  <!-- <ion-row>
     <ion-card>
       <ion-button (click)="openModal()" expand="full">Open Modal</ion-button>
       <ion-button (click)="openTransparentModal()" expand="full" color="secondary">Open Transparent Modal</ion-button>
       <ion-button (click)="openPopover($event)" expand="full" color="tertiary">Open Popover </ion-button>
     </ion-card>
-  </ion-row>
+  </ion-row> -->
 
   <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
 </ion-content>

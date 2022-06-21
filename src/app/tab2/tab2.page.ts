@@ -19,12 +19,13 @@ export class Tab2Page implements OnInit {
 
   ) {}
 
-    async openModal(){
+    async openModal(item){
       const modal = await this.modalCtrl.create({
         component: MyModalPage,
         cssClass: 'small-modal'
       });
 
+      item = this.pokemons;
       await modal.present();
     }
 
@@ -33,7 +34,7 @@ export class Tab2Page implements OnInit {
         component: MyModalPage,
         cssClass: 'transparent-modal'
       });
-
+      
       await modal.present();
     }
 
